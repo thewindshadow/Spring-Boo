@@ -17,11 +17,13 @@ public class Battle24Application {
 		SpringApplication.run(Battle24Application.class, args);
 	}
 
-	@RequestMapping(value = "/test",method = RequestMethod.POST)
+	@RequestMapping(value = "/test",method = RequestMethod.GET)
 	public String loggerLevel(){
 		logger.debug("LoggerLevel ： debug");
 		logger.info("LoggerLevel ： info");
 		logger.error("LoggerLevel ： error");
 		return "";
 	}
+
+
 }
