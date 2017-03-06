@@ -26,4 +26,5 @@ public class Battle24Application {
 	}
 
 
+
 }
