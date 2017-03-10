@@ -11,5 +11,6 @@ public class ComputeServiceApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(ComputeServiceApplication.class, args);
 		new SpringApplicationBuilder(ComputeServiceApplication.class).web(true).run(args);
+
 	}
 }
