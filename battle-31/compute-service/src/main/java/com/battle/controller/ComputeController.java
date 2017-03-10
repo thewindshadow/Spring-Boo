@@ -25,7 +25,7 @@ public class ComputeController {
     public Integer add(@RequestParam Integer a,@RequestParam Integer b){
         final ServiceInstance instance = client.getLocalServiceInstance();
         Integer i = a + b;
-        System.out.println("/add  host:" + instance.getHost() + "server_id:" + instance.getServiceId() + "result:" + i);
+        System.out.println("/add  host:" + instance.getHost() + "\tport:"+instance.getPort()+"\tserver_id:" + instance.getServiceId() + "result:" + i);
         return i;
     }
 }
