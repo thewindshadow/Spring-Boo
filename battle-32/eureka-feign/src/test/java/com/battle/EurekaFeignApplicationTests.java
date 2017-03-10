@@ -11,6 +11,7 @@ public class EurekaFeignApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }
