@@ -11,7 +11,6 @@
 	<name>compute-api</name>
 	<description>compute-api project for Spring Boot</description>
 
-
 	<parent>
 		<groupId>com.battle</groupId>
 		<artifactId>compute-service</artifactId>
