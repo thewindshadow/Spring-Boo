@@ -1,5 +1,6 @@
 package com.battle.controller;
 
+import com.battle.domain.Result;
 import com.battle.domain.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -19,9 +20,11 @@ public class UserController {
 
     @ApiOperation(value="获取用户列表", notes="")
     @RequestMapping(value={""}, method=RequestMethod.GET)
-    public List<User> getUserList() {
+    public Result<List<User>> getUserList() {
+        Result<List<User>> result = new Result<>();
         List<User> r = new ArrayList<User>(users.values());
-        return r;
+        result.setData(r);
+        return result;
     }
 
     @ApiOperation(value="创建用户", notes="根据User对象创建用户")
