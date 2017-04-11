@@ -14,6 +14,7 @@ public class User {
     private String name;
     @ApiModelProperty(value="年龄")
     private Integer age;
+
     public User() {
     }
 
