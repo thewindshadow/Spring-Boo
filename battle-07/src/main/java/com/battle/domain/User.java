@@ -1,13 +1,19 @@
 package com.battle.domain;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * Created by Bing.Z on 2017/2/24.
  */
+@ApiModel(value = "用户",description = "user")
 public class User {
+    @ApiModelProperty(value = "用户id", required = true)
     private Long id;
+    @ApiModelProperty(value="用户名",required = true)
     private String name;
+    @ApiModelProperty(value="年龄")
     private Integer age;
-
     public User() {
     }
 
